@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="title">Alex's Hangman Game</h1>
+        <div class="all-mistakes">
+            Wrong answers: 
+            <span class="mistakes">0</span>
+            of
+            <span class="max-mistakes"></span> 
+        </div>
+        <div class="content">
+            <img src="./Images/0.png" alt="" class="hangman-img">
+            <div class="paragraphs">
+                <p class="text-status">Please fill up your answer with a programming word: </p>
+                <p class="word-to-be-guest">The word to be guest goes here</p>
+            </div>
+            <div class="keyboard"></div>
+            <button class="btn btn-dark" onClick="reset()">Reset</button>
+        </div>
+    </div>
+
+    <script src="words.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
