@@ -21,7 +21,7 @@ function randomWord() {
 
 function createButtons() {
     let gameButtons = "abcdefghijklmnopqrstuvwxyz".split("").map(letter => 
-        `<button class="btn btn-lg btn-warning m-2" id='${letter}' onClick="handleGuess('${letter}')">${letter}</button>`
+        `<button class="btn btn-lg btn-dark m-2" id='${letter}' onClick="handleGuess('${letter}')">${letter}</button>`
     ).join("");
     keyboard.innerHTML = gameButtons; 
 }
